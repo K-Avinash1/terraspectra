@@ -218,3 +218,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# TerraSpectra local data
+data/*
+
+# Environment variables
+.env
