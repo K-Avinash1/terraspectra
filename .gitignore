@@ -224,3 +224,7 @@ data/*
 
 # Environment variables
 .env
+
+data/*
+.venv/
+.env
