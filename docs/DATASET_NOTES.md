@@ -1,0 +1,17 @@
+﻿# Dataset notes (TerraSpectra)
+
+Status: candidates under evaluation. No final dataset approved yet.
+
+| Dataset | Source | Licence | Format | Georeferenced | Fit |
+|---|---|---|---|---|---|
+| Javidan tomato HSI | Zenodo 10.5281/zenodo.15800414 | CC BY 4.0 | .mat, 400-950 nm | No (leaf-level) | Model science (PCA, 3D-CNN, ViT) |
+| S2-PDD potato (UAV) | 4TU 10.4124/ff427e5c-d454-4d03-a090-d504329e3cb3 | To verify | PNG + NPZ tiles (3/10/20 bands) | To verify | Field-level detection of symptomatic plants |
+
+## Rejected
+- 4TU latent blight potato (88.5 GB zip): too large.
+- USDA tomato bacterial spot (15.4 GB, non-geospatial): too large for this project.
+- Danespo potato (204 bands): no public download link found.
+
+## Honest limits
+- No verified dataset supports forecasting disease weeks ahead; the feature is called early disease detection.
+- Synthetic or sample data is allowed only for UI, API and pipeline tests, and must be labelled.
