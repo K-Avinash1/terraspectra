@@ -15,3 +15,15 @@ Status: candidates under evaluation. No final dataset approved yet.
 ## Honest limits
 - No verified dataset supports forecasting disease weeks ahead; the feature is called early disease detection.
 - Synthetic or sample data is allowed only for UI, API and pipeline tests, and must be labelled.
+
+## Javidan tomato: technical findings (12 Nov)
+- Licence: CC BY 4.0 (Zenodo record page).
+- Numbered .mat files are 3-D cubes, shape (140, 280, 550), float64; *_features.mat are EfficientNet features (processed, not used).
+- No wavelength vector in the files. Assumed even spacing over 400-950 nm (paper range); unverified.
+- Leaves were excised and imaged once on days 1, 3, 5, 7 (not tracked over time); plant IDs not provided.
+- Visible symptoms: day 5 (A. alternata, B. cinerea), day 7 (A. solani, F. oxysporum); controls never.
+- Leakage rules: split by whole cube only; fit PCA/scalers on training cubes only; leave-one-cube-out evaluation.
+
+## S2-PDD
+- Licence: CC BY-NC 4.0 (confirm with mentor/HR for internship use).
+- Released: RGB tiles plus 3/10/20-band hyperspectral tiles; no full cube; no geo file listed.
