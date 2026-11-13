@@ -27,3 +27,10 @@ Status: candidates under evaluation. No final dataset approved yet.
 ## S2-PDD
 - Licence: CC BY-NC 4.0 (confirm with mentor/HR for internship use).
 - Released: RGB tiles plus 3/10/20-band hyperspectral tiles; no full cube; no geo file listed.
+
+## Cube scale check (12 Nov)
+- File naming: 2 cubes per class per day (Day_one, Day_three, Day_five, Day_seven), about 40 cubes in total.
+- Healthy_1: values 0-0.79 (reflectance-like). Botrytis_cinerea_1: values 0-4095 (raw-counts-like). Full scan results are in docs/cube_stats.csv.
+- Risk: if scale differs by class, a model can learn the scale instead of the disease. Do not train until this is resolved.
+- Author email sent about calibration, wavelengths and plant IDs (S2-PDD authors contacted earlier).
+- S2-PDD README: no coordinates or CRS documented; 20-band centres 420-970 nm; labels are YOLO text files.
