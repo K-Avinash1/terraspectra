@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import MapView from './components/MapView'
 import Sidebar from './components/Sidebar'
 import { NAV_ITEMS } from './navigation'
 import type { PageKey } from './navigation'
@@ -16,10 +17,14 @@ export default function App() {
           <h1>{current.label}</h1>
         </header>
         <main className="page">
-          <section className="empty-state">
-            <h2>{current.emptyTitle}</h2>
-            <p>{current.emptyText}</p>
-          </section>
+          {page === 'map' ? (
+            <MapView />
+          ) : (
+            <section className="empty-state">
+              <h2>{current.emptyTitle}</h2>
+              <p>{current.emptyText}</p>
+            </section>
+          )}
         </main>
       </div>
     </div>
