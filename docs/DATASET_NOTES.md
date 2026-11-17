@@ -34,3 +34,8 @@ Status: candidates under evaluation. No final dataset approved yet.
 - Risk: if scale differs by class, a model can learn the scale instead of the disease. Do not train until this is resolved.
 - Author email sent about calibration, wavelengths and plant IDs (S2-PDD authors contacted earlier).
 - S2-PDD README: no coordinates or CRS documented; 20-band centres 420-970 nm; labels are YOLO text files.
+
+## Scale and duplicate findings (17 Nov)
+- Healthy 8/8 reflectance-like; A. solani 8/8 and Botrytis 8/8 raw counts; A. alternata 7 reflectance + 1 raw; Fusarium 3 reflectance + 5 raw.
+- Suspected duplicates with identical max/mean: Fusarium_6/7/8 = Alternaria_3/2/1; Healthy 1=6, 2=5, 3=7, 4=8; solani_4 = solani_6 (checked with ml/src/find_duplicates.py).
+- Decision pending: tomato cubes only for PCA/spectral analysis (reflectance-like, de-duplicated); S2-PDD 20-band tiles for model training.
